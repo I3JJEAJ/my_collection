@@ -1,0 +1,6 @@
+- name: Orchestrate
+  hosts: localhost
+  tasks:
+    - name: Init ns
+      ansible.builtin.include_role:
+        name: create_ns
