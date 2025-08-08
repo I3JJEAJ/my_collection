@@ -1,5 +1,6 @@
 - name: Create a k8s namespace
   kubernetes.core.k8s:
+    verify_ssl: false
     name: "{{ create_ns_namespace }}"
     api_version: "{{ create_ns_namespace }}"
     kind: Namespace
